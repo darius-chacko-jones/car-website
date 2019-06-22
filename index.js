@@ -1,8 +1,19 @@
 $(document).ready(function() {
-    $("#q1-submit").click(function(){
-        var selectedItem = $("#q1-dropdown").val();
-        var value = $("#q1-dropdown").children("option:selected").html();
-        $("#q1-response").html("you clicked submit, " + value + ", "+ selectedItem)
-    });
+
+    function showQuestion(submit,dropdown,response,correctAnswer) {
+        $("#"+submit).click(function(){
+            var index = $("#" + dropdown).val();
+            var value = $("#" + dropdown).children("option:selected").html();
+            
+            if (index == correctAnswer) {
+                $("#" + response).html("That's correct!");
+            }
+            else {
+                $("#" + response).html("That's incorrect :( ");
+            }
+        });
+    }
+
+    showQuestion("q1-submit","q1-dropdown","q1-response",2);
 });
 
