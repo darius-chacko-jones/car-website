@@ -39,6 +39,10 @@ $(document).ready(function() {
     
 
     createQuestion("questions","1","Who is the inventor of electric cars?",["Elon Musk","Robert Anderson","Franz von Holzhausen","Darius Chacko Jones"],2);
-    
+    createQuestion("questions","2","Who did the design of Tesla?",["Elon Musk","Zachary Anderson","Franz von Holzhausen","Darius Chacko Jones"],3);
+    createQuestion("questions","3","What is the tesla model S price?",["CAD$ 102,890","CAD$ 110,560","CAD$ 78,000","CAD$ 35,000"],1);
+    createQuestion("questions-p","4","what will be the amount of vehicles by 2050?",["1 billon", "3 billon", "5 billon", "10 billon"],2);
+
+
 });
 
